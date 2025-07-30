@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenakshi - Digital Marketing Manager | SEO Expert Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* White background */
+            color: #333333; /* Dark gray text */
+            font-size: 0.875rem; /* Base font size reduced to text-sm equivalent */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            /* Updated button colors for dark theme */
+            @apply bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out shadow-md text-sm; /* Reduced padding and font size */
+        }
+        .section-title {
+            @apply text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-10; /* Reduced from 3xl/4xl */
+        }
+        .card {
+            @apply bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border border-gray-300; /* Reduced padding */
+        }
+        /* Custom scroll-to-top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 20px; /* Place the button at the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #444444; /* Dark gray */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 12px; /* Reduced padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 16px; /* Reduced font size */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #555555; /* Lighter gray on hover */
+        }
+
+        /* Specific mobile adjustments */
+        @media (max-width: 767px) {
+            .hero-content {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .header-nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem; /* Smaller gap for mobile nav items */
+            }
+            .header-nav li {
+                margin: 0; /* Remove default list item margins */
+            }
+            .header-nav a {
+                padding: 0.25rem 0.5rem; /* Smaller padding for mobile nav links */
+            }
+            .section-title {
+                font-size: 1.75rem; /* text-3xl on small screens */
+                margin-bottom: 2rem;
+            }
+            .card {
+                padding: 1rem; /* Smaller padding for cards on mobile */
+            }
+            .skills-grid span {
+                padding: 0.25rem 0.75rem; /* Smaller padding for skill tags */
+                font-size: 0.75rem; /* text-xs */
+            }
+            .portfolio-grid img {
+                height: 200px; /* Fixed height for portfolio images on mobile */
+                object-fit: cover;
+            }
+            .footer-text {
+                font-size: 0.625rem; /* text-xs or smaller */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm py-2 sticky top-0 z-50">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <a href="#" class="text-lg font-bold text-gray-900 mb-2 md:mb-0">Meenakshi</a>
+            <ul class="flex flex-wrap justify-center space-x-2 md:space-x-3 header-nav">
+                <li><a href="#home" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Home</a></li>
+                <li><a href="#about" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">About</a></li>
+                <li><a href="#skills" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Skills</a></li>
+                <li><a href="#experience" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Experience</a></li>
+                <li><a href="#education" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Education</a></li>
+                <li><a href="#portfolio" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Portfolio</a></li>
+                <li><a href="#contact" class="text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="bg-gray-900 text-white py-12 md:py-20 text-center">
+        <div class="container mx-auto px-4 hero-content">
+            <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-3 md:mb-4">Meenakshi Chauhan</h1>
+            <p class="text-base md:text-lg mb-2 md:mb-3 max-w-3xl mx-auto">
+                Digital Marketing Manager | SEO Expert
+            </p>
+            <p class="text-sm md:text-base mb-6 md:mb-8 max-w-3xl mx-auto">
+                Delhi, India | mchauhan1924@gmail.com
+            </p>
+            <a href="#contact" class="btn-primary inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex flex-col items-center">
+                <div class="w-full text-gray-700 leading-relaxed text-sm md:text-base">
+                    <p class="mb-2 md:mb-3">
+                        As a dedicated Digital Marketing Manager and SEO Expert based in Delhi, India, I bring a wealth of experience in driving organic growth and maximizing digital presence for businesses. My expertise spans comprehensive SEO strategies, including technical, on-page, and off-page optimization, alongside effective PPC campaign management and social media marketing.
+                    </p>
+                    <p class="mb-2 md:mb-3">
+                        I am proficient in leveraging tools like Ahrefs, SEMrush, Google Ads, and Google Analytics to deliver data-driven results. My career has been focused on improving website rankings, increasing traffic, and enhancing customer engagement across various platforms.
+                    </p>
+                    <p>
+                        I am passionate about helping businesses unlock their full online potential and achieve measurable success in the digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-2 md:gap-3 skills-grid">
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🔍 Keyword research</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🅰️ Ahrefs</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">📊 Semrush</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">⚙️ Google Search Console</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">📈 Google Analytics</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🗣️ AnswerThePublic</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🔗 Backlink checker</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🌐 Bing Webmaster Tools</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">Ⓜ️ Moz</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">📈 Google Trends</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🔍 KWFinder</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🐸 Screaming Frog</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">⚡ PageSpeed Insights</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🕷️ Screaming Frog SEO Spider</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">⭐ Seobility</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">💡 Ubersuggest</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🏆 WooRank</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">👑 Majestic</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🔥 Exploding Topics</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🎯 Rank tracking</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">👁️ SERPWatcher</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">📋 Site Audit</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">🌊 SEOquake</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-md">✅ Checkbot Seo Checker</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Experience</h2>
+            <div class="space-y-6 md:space-y-8">
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Digital Marketing Manager</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">Jai Ambay Etching Process – Delhi, India</p>
+                    <p class="text-xs text-gray-500 mb-2">10/04/2023 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-0.5 text-xs">
+                        <li>Conducted website analysis and audits, implementing on-page SEO updates.</li>
+                        <li>Oversee comprehensive on and off-page SEO strategies.</li>
+                        <li>Managed YouTube SEO optimization.</li>
+                        <li>Proficient in PPC campaigns, including Google Ads, LinkedIn Ads and Facebook Ads.</li>
+                        <li>Social media calendar created.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Digital Marketing Manager</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">Learn4Exam – Delhi, India</p>
+                    <p class="text-xs text-gray-500 mb-2">05/10/2021 – 03/04/2023</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-0.5 text-xs">
+                        <li>Handled entire team for company's social media marketing.</li>
+                        <li>Performed Email and Telegram marketing.</li>
+                        <li>Conducted PPC on multiple ad platforms.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Senior Digital Marketing Executive</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">DignitySoft Pvt Ltd – Delhi, India</p>
+                    <p class="text-xs text-gray-500 mb-2">05/07/2020 – 01/10/2021</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-0.5 text-xs">
+                        <li>Performed On-Page SEOs of clients to optimize their website and improve ranking and loading time.</li>
+                        <li>Performed Off-Page SEOs with business listing and back-links.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Social Media Marketing Executive</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">FAV Marketing – Delhi, India</p>
+                    <p class="text-xs text-gray-500 mb-2">10/02/2020 – 01/07/2020</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-0.5 text-xs">
+                        <li>Handled social media accounts like WhatsApp, Facebook, Telegram, Skype and Instagram.</li>
+                        <li>Performed social media posting, customer interaction and queries, improved customer engagement and following by 10-fold.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-4 md:space-y-6 max-w-2xl mx-auto">
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Search Engine Optimization (SEO) with Squarespace</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">Coursera Project Network</p>
+                    <p class="text-xs text-gray-500">Completed</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Google Digital Marketing & E-commerce Professional Certificate</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">Google (Coursera)</p>
+                    <p class="text-xs text-gray-500">Completed</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Meta Marketing Analytics Professional Certificate</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">Meta (Coursera)</p>
+                    <p class="text-xs text-gray-500">Completed</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Master in English</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">IGNOU – Delhi, India</p>
+                    <p class="text-xs text-gray-500">2012 – 2016</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-gray-800">Bachelor of Art</h3>
+                    <p class="text-sm text-gray-700 mb-0.5">SOL, Delhi University – Delhi, India</p>
+                    <p class="text-xs text-gray-500">2008 - 2012</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">My Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">⚙️</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">Technical SEO</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Ensuring your website is crawlable, indexable, and performs optimally for search engines. This includes site speed optimization, mobile-friendliness, schema markup, and more.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">📝</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">On-Page SEO</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This involves keyword research, content optimization, meta tags, and internal linking.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">🔗</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">Off-Page SEO</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Building authority and trust for your website through high-quality backlinks, social media signals, and online reputation management.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">✍️</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">Content Strategy</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Developing a content plan that aligns with your SEO goals, attracts your target audience, and establishes your brand as an industry leader.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">📍</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">Local SEO</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Optimizing your online presence to attract more business from local searches. Perfect for businesses with physical locations.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="text-3xl md:text-4xl mb-2 md:mb-3 text-center text-gray-700">🔍</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 md:mb-3 text-center">SEO Audits</h3>
+                    <p class="text-xs md:text-sm text-gray-600 text-center">
+                        Comprehensive analysis of your website's current SEO performance, identifying strengths, weaknesses, and opportunities for improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">My Recent Work</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 portfolio-grid">
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=🛒" alt="E-commerce SEO Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">E-commerce Traffic & Conversion Boost</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Achieved a <strong>150% increase</strong> in organic traffic and <strong>80% rise</strong> in conversions for an online fashion retailer through comprehensive on-page and technical SEO.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">On-Page SEO</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Technical SEO</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">Google Analytics</span>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=☁️" alt="SaaS Lead Generation Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">SaaS Organic Lead Generation</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Drove a <strong>3x increase</strong> in qualified leads for a B2B SaaS company by optimizing content strategy and improving site structure using Ahrefs and SEMrush.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Content Strategy</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Keyword research</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">Ahrefs</span>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=🗺️" alt="Local SEO Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">Local SEO Rank Improvement</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Secured top 3 local pack rankings for a service business, leading to a <strong>70% increase</strong> in local calls and directions through targeted local SEO.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Local SEO</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Google My Business</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">Google Search Console</span>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=▶️" alt="YouTube SEO Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">YouTube Channel Growth</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Optimized a YouTube channel's videos and metadata, resulting in a <strong>50% increase</strong> in organic views and subscriber growth within 6 months.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">YouTube SEO optimization</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Tube Buddy</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">Social Blade</span>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=🏢" alt="Site Audit Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">Enterprise Site Audit & Optimization</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Conducted a comprehensive technical SEO audit for a large enterprise website, identifying and resolving critical issues that improved crawlability and indexability.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Site Audit</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Screaming Frog</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">PageSpeed Insights</span>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/600x350/FFFFFF/333333?text=✍️" alt="Content Marketing Project Logo" class="rounded-lg mb-2 w-full h-auto object-cover">
+                    <h3 class="text-base font-semibold text-gray-800 mb-1">Content-Driven Authority Building</h3>
+                    <p class="text-xs text-gray-600 mb-2">
+                        Developed and executed a content marketing and link building strategy that secured high-quality backlinks and increased domain authority for a niche blog.
+                    </p>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Content Strategy</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-1">Backlink checker</span>
+                    <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">BuzzSumo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div class="card">
+                    <p class="text-sm text-gray-700 italic mb-2 md:mb-3">
+                        "Working with Meenakshi was a game-changer for our online presence. Their expertise in SEO is unparalleled, and we saw significant improvements in our rankings and traffic within just a few months. Highly recommend!"
+                    </p>
+                    <p class="font-semibold text-gray-800 text-xs md:text-sm">- Client Name, Company Name</p>
+                </div>
+                <div class="card">
+                    <p class="text-sm text-gray-700 italic mb-2 md:mb-3">
+                        "Meenakshi transformed our website from being invisible to a top performer. Their strategic approach to content and technical SEO delivered real, measurable results. A true SEO wizard!"
+                    </p>
+                    <p class="font-semibold text-gray-800 text-xs md:text-sm">- Client Name, Company Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="max-w-md mx-auto card">
+                <p class="text-center text-gray-700 mb-4 md:mb-6 text-sm md:text-base">
+                    Ready to boost your organic traffic and grow your business? Reach out directly via email.
+                </p>
+                <div class="text-center mb-4 md:mb-5 text-gray-800">
+                    <p class="text-base font-semibold">Meenakshi Chauhan</p>
+                    <p class="text-sm">Delhi, India</p>
+                    <p class="text-sm">Email: <a href="mailto:mchauhan1924@gmail.com" class="text-gray-700 hover:underline">mchauhan1924@gmail.com</a></p>
+                </div>
+                <div class="text-center">
+                    <a href="mailto:mchauhan1924@gmail.com" class="btn-primary inline-block">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-1.5">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xs footer-text">&copy; 2020 Meenakshi Chauhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+
+    <script>
+        // Get the button
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
